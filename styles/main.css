@@ -1,0 +1,201 @@
+body {
+  font-family: "Lore Epsom", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  color: white;
+}
+
+header {
+  background-color: #012929;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 1280px;
+}
+header .navigation {
+  margin-top: 30px;
+  margin-left: -12px;
+  margin-bottom: -15px;
+}
+header .navigation a {
+  color: white;
+}
+header .navigation .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2px; 
+  text-align: center;
+}
+header .navigation .nav-links li {
+  background-color: #086666;
+  width: 10vw;
+  max-width: 200px;
+  padding: 0.5em 0;
+}
+header .navigation .nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+header .navigation .dropdown {
+  position: relative;
+}
+header .navigation .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #086666;
+  padding: 10px;
+  border-top: 1px solid #065253;
+  padding: 10px;
+  list-style: none;
+  text-align: left;
+  left: 0;
+  top: 100%;
+  min-width: 160px;
+  border-radius: 0%;
+  border: 1px solid #065253;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header .navigation .dropdown .dropdown-menu li {
+  text-align: left;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+header .navigation .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+main {
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+}
+main .text-column {
+  flex: 2;
+  padding-right: 1rem;
+}
+main .social-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 12px;
+}
+main .social-icons a {
+  color: white;
+}
+
+.main-section {
+  padding: 1em 2em;
+}
+.main-section h1 {
+  font-size: 3.5rem;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.main-section img {
+  max-width: 100%;
+}
+.main-section p {
+  text-indent: 50px;
+  margin-bottom: 1em;
+}
+.main-section p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #086666;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+footer .footer-left, footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+footer .footer-left {
+  margin-right: auto;
+}
+footer .footer-right a {
+  margin-left: 1rem;
+  color: white;
+}
+
+.logo img {
+  width: 120px;
+  background-color: #086666;
+  margin-top: 15px;
+  padding: 10px 12px 0px;
+}
+.logo.logo-left {
+  position: absolute;
+}
+.logo.logo-left img {
+  position: relative;
+  width: 50px;
+  top: 70px;
+  padding: 0px 12px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  header .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  header .navigation {
+    width: 100%;
+  }
+  header .navigation .nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  header .navigation .nav-links li {
+    width: 100%;
+    max-width: unset;
+  }
+  header .navigation .nav-links li .dropdown-menu {
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .text-column {
+    padding-right: 0;
+  }
+  main .carousel {
+    flex: 1;
+    background-color: #012929;
+    border: 10px solid #065253;
+    padding: 10px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .footer-left, footer .footer-right {
+    justify-content: center;
+  }
+  footer .footer-right a {
+    margin: 0.5rem 0;
+  }
+}
